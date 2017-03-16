@@ -17,7 +17,7 @@
 # |                                                                       |
 # | PARAMETERS : None.                                                    |
 # |                                                                       |
-# | MODIFIED   : 03/06/2017 (mm/dd/yyyy)                                  |
+# | MODIFIED   : 03/16/2017 (mm/dd/yyyy)                                  |
 # |                                                                       |
 # | NOTE       : As with any code,ensure to test this script in a         |
 # |              development environment before attempting to run it in   |
@@ -34,8 +34,8 @@ source ~/.bash_profile;
 # | GLOBAL VARIABLES ABOUT THE ABSOLUTE PATH OF THE SHELL COMMAND         |
 # +-----------------------------------------------------------------------+
 
-export AWK='/bin/awk'
-export DATE='/bin/date'
+export AWK=`which awk`
+export DATE=`which date`
 
 # +-----------------------------------------------------------------------+
 # | GLOBAL VARIABLES ABOUT STRINGS AND BACKTICK EXECUTION RESULT OF SHELL |
