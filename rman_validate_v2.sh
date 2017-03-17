@@ -17,7 +17,7 @@
 # |                                                                       |
 # | PARAMETERS : None.                                                    |
 # |                                                                       |
-# | MODIFIED   : 03/16/2017 (mm/dd/yyyy)                                  |
+# | MODIFIED   : 03/17/2017 (mm/dd/yyyy)                                  |
 # |                                                                       |
 # | NOTE       : As with any code,ensure to test this script in a         |
 # |              development environment before attempting to run it in   |
@@ -36,6 +36,7 @@ source ~/.bash_profile;
 
 export AWK=`which awk`
 export DATE=`which date`
+export ECHO=`which echo`
 
 # +-----------------------------------------------------------------------+
 # | GLOBAL VARIABLES ABOUT STRINGS AND BACKTICK EXECUTION RESULT OF SHELL |
@@ -65,7 +66,7 @@ EOF`
 # | WITH AWK COMMAND TO PROCESS BSKEY_LIST SAVE TO BSKEY_LIST_WITH_COMMA  |
 # +-----------------------------------------------------------------------+
 
-BSKEY_LIST_WITH_COMMA=`echo $BSKEY_LIST | $AWK -F' ' '{ for ( i=1; i<NF; i++ ) print $i","; print $NF }'`
+BSKEY_LIST_WITH_COMMA=`$ECHO $BSKEY_LIST | $AWK -F' ' '{ for ( i=1; i<NF; i++ ) print $i","; print $NF }'`
 
 # +-----------------------------------------------------------------------+
 # | VALIDATE RMAN BACKUPSET THAT IS GENERATED LAST NIGHT                  |
