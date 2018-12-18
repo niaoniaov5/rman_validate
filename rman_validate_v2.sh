@@ -8,7 +8,7 @@
 # |      Copyright (c) 2016-2017 Quanwen Zhao. All rights reserved.       |
 # |-----------------------------------------------------------------------|
 # | DATABASE   : Oracle                                                   |
-# | OS ENV     : CentOS 6.6 X86_64 Bit                                    |
+# | OS ENV     : Oracle Linux 6.7 X86_64 Bit                                    |
 # | File       : rman_validate_v2.sh                                      |
 # | CLASS      : LINUX Bourne-Again Shell Scripts                         |
 # | PURPOSE    : This bash script file used to validate rman backupset    |
